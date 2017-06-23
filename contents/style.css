@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/*!
- * NhaTrangToday v1.0.0 (http://nhatrangtoday.vn)
- * Copyright 2015 Nhatrangtoday.
- */
 @font-face {
   font-family: "os";
   src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.svg") format("svg");
@@ -603,7 +599,7 @@ footer {
     transform: scale(2.5, 2.5); } }
 .price-table {
   position: relative; }
-  .price-table.bestter:before {
+  .price-table.better:before {
     content: '';
     display: block;
     width: 0;
@@ -615,7 +611,7 @@ footer {
     left: 1px;
     border-left-color: white;
     border-top-color: white; }
-  .price-table.bestter:after {
+  .price-table.better:after {
     content: 'Nên chọn';
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 10px;
