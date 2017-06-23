@@ -1161,10 +1161,14 @@ footer {
     -webkit-border-radius: 4px;
     border-radius: 4px;
     padding: 30px 40px; }
+    .detail-page .content .btn-call {
+      display: block;
+      margin-bottom: 20px; }
     .detail-page .content .btn-groups {
       margin-bottom: 30px; }
       .detail-page .content .btn-groups .btn-call {
-        float: right; }
+        float: right;
+        display: inline-block; }
       .detail-page .content .btn-groups:after {
         content: '';
         display: table;
@@ -1183,34 +1187,74 @@ footer {
           color: #079f90;
           display: inline-block;
           margin-right: 12px; }
+    .detail-page .content .step-tour.step-tour-day .step {
+      position: static; }
+      .detail-page .content .step-tour.step-tour-day .step:after {
+        display: none; }
+      .detail-page .content .step-tour.step-tour-day .step .step-day span {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        display: block;
+        color: #008b7c; }
+        .detail-page .content .step-tour.step-tour-day .step .step-day span:before {
+          display: inline-block;
+          content: '\f017';
+          font-family: FontAwesome;
+          font-size: 20px;
+          color: #008b7c;
+          margin-right: 10px; }
+      .detail-page .content .step-tour.step-tour-day .step .step-day-item {
+        padding-left: 15px;
+        padding-bottom: 20px; }
+        .detail-page .content .step-tour.step-tour-day .step .step-day-item:last-child {
+          padding-bottom: 0; }
+        .detail-page .content .step-tour.step-tour-day .step .step-day-item:after {
+          top: 10px;
+          left: 21px; }
     .detail-page .content .step-tour .step {
-      margin-bottom: 20px; }
+      padding-bottom: 20px;
+      padding-left: 20px; }
+      .detail-page .content .step-tour .step:after {
+        top: 18px;
+        left: 26px; }
       .detail-page .content .step-tour .step .step-number {
         float: left;
-        width: 50px;
+        width: 15px;
         display: block; }
         .detail-page .content .step-tour .step .step-number span {
+          width: 14px;
+          height: 14px;
+          border: 2px solid #079f90;
           -moz-border-radius: 50%;
           -webkit-border-radius: 50%;
           border-radius: 50%;
-          width: 45px;
-          height: 45px;
-          text-align: center;
-          line-height: 45px;
+          background-color: white;
           display: block;
-          background-color: #079f90;
-          color: white;
-          font-size: 20px; }
+          margin-top: 4px;
+          position: relative;
+          z-index: 2; }
       .detail-page .content .step-tour .step .step-content {
-        padding-left: 12px;
-        overflow: hidden; }
+        padding-left: 30px; }
         .detail-page .content .step-tour .step .step-content .step-title {
           font-weight: bold;
           color: #444;
-          font-size: 20px;
+          font-size: 18px;
           line-height: 1.4;
-          margin-bottom: 10px;
-          margin-top: 8px; }
+          margin-bottom: 10px; }
+    .detail-page .content .step-tour .step, .detail-page .content .step-tour.step-tour-day .step .step-day-item {
+      position: relative; }
+      .detail-page .content .step-tour .step:after, .detail-page .content .step-tour.step-tour-day .step .step-day-item:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 2px;
+        height: 100%;
+        background-color: #079f90;
+        opacity: 0.15; }
+      .detail-page .content .step-tour .step:last-child:after, .detail-page .content .step-tour.step-tour-day .step .step-day-item:last-child:after {
+        display: none; }
 
 .product-page-content {
   padding: 50px 0; }
@@ -1775,19 +1819,31 @@ footer {
         padding-left: 15px; }
         .detail-page .content ul li {
           font-size: 14px; }
+      .detail-page .content .step-tour.step-tour-day .step .step-day span {
+        font-size: 16px;
+        margin-bottom: 15px; }
+        .detail-page .content .step-tour.step-tour-day .step .step-day span:before {
+          font-size: 18px; }
+      .detail-page .content .step-tour.step-tour-day .step .step-day-item {
+        padding-bottom: 2px; }
+        .detail-page .content .step-tour.step-tour-day .step .step-day-item:after {
+          left: 20px; }
       .detail-page .content .step-tour .step {
-        margin-bottom: 10px; }
+        padding-bottom: 3px;
+        padding-left: 15px; }
+        .detail-page .content .step-tour .step:after {
+          left: 20px;
+          top: 15px; }
         .detail-page .content .step-tour .step .step-number {
-          width: 35px; }
+          width: 15px; }
           .detail-page .content .step-tour .step .step-number span {
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            font-size: 16px; }
+            width: 12px;
+            height: 12px;
+            margin-top: 2px; }
         .detail-page .content .step-tour .step .step-content {
-          padding-left: 8px; }
+          padding-left: 20px; }
           .detail-page .content .step-tour .step .step-content .step-title {
-            font-size: 16px;
+            font-size: 14px;
             margin-top: 4px; }
       .detail-page .content .btn-groups {
         text-align: center;
@@ -2175,19 +2231,31 @@ footer {
         padding-left: 15px; }
         .detail-page .content ul li {
           font-size: 14px; }
+      .detail-page .content .step-tour.step-tour-day .step .step-day span {
+        font-size: 16px;
+        margin-bottom: 15px; }
+        .detail-page .content .step-tour.step-tour-day .step .step-day span:before {
+          font-size: 18px; }
+      .detail-page .content .step-tour.step-tour-day .step .step-day-item {
+        padding-bottom: 2px; }
+        .detail-page .content .step-tour.step-tour-day .step .step-day-item:after {
+          left: 20px; }
       .detail-page .content .step-tour .step {
-        margin-bottom: 10px; }
+        padding-bottom: 3px;
+        padding-left: 15px; }
+        .detail-page .content .step-tour .step:after {
+          left: 20px;
+          top: 15px; }
         .detail-page .content .step-tour .step .step-number {
-          width: 35px; }
+          width: 15px; }
           .detail-page .content .step-tour .step .step-number span {
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            font-size: 16px; }
+            width: 12px;
+            height: 12px;
+            margin-top: 2px; }
         .detail-page .content .step-tour .step .step-content {
-          padding-left: 8px; }
+          padding-left: 20px; }
           .detail-page .content .step-tour .step .step-content .step-title {
-            font-size: 16px;
+            font-size: 14px;
             margin-top: 4px; }
       .detail-page .content .btn-groups {
         text-align: center;
@@ -2546,19 +2614,31 @@ footer {
         padding-left: 15px; }
         .detail-page .content ul li {
           font-size: 14px; }
+      .detail-page .content .step-tour.step-tour-day .step .step-day span {
+        font-size: 16px;
+        margin-bottom: 15px; }
+        .detail-page .content .step-tour.step-tour-day .step .step-day span:before {
+          font-size: 18px; }
+      .detail-page .content .step-tour.step-tour-day .step .step-day-item {
+        padding-bottom: 2px; }
+        .detail-page .content .step-tour.step-tour-day .step .step-day-item:after {
+          left: 20px; }
       .detail-page .content .step-tour .step {
-        margin-bottom: 10px; }
+        padding-bottom: 3px;
+        padding-left: 15px; }
+        .detail-page .content .step-tour .step:after {
+          left: 20px;
+          top: 15px; }
         .detail-page .content .step-tour .step .step-number {
-          width: 35px; }
+          width: 15px; }
           .detail-page .content .step-tour .step .step-number span {
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            font-size: 16px; }
+            width: 12px;
+            height: 12px;
+            margin-top: 2px; }
         .detail-page .content .step-tour .step .step-content {
-          padding-left: 8px; }
+          padding-left: 20px; }
           .detail-page .content .step-tour .step .step-content .step-title {
-            font-size: 16px;
+            font-size: 14px;
             margin-top: 4px; }
       .detail-page .content .btn-groups {
         text-align: center;
